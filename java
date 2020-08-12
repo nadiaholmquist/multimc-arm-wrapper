@@ -82,5 +82,4 @@ done
 
 args[$cpArg]="$(cat <(find $destDir -type f) <(printf '%s\n' "${otherLibs[@]}") | tr $'\n' :)"
 
-echo "${args[@]}"
 exec java "${args[@]}"
